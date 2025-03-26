@@ -1,0 +1,25 @@
+:root {
+  --clr-primary-500: hsl(221, 39%, 11%);
+
+  --clr-neutral-700: hsl(215, 14%, 34%);
+  --clr-neutral-300: hsl(220, 13%, 91%);
+  --clr-neutral-200: hsl(0, 0%, 97%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --clr-accent-500: hsl(199, 89%, 48%);
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+
+  /* --color-text-primary: var(--clr-primary-500);
+    --color-bg-page: var(--clr-neutral-100);
+    --color-bg-hero: var(--clr-neutral-200);
+    --color-text-muted: var(--clr-neutral-700); */
+}
+
