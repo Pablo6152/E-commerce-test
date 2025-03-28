@@ -19,7 +19,7 @@
   <body>
     <header class="primary-header">
       <div class="container">
-      <nav class="nav-wrapper">
+        <nav class="nav-wrapper">
           <a class="logo" href="#">Hazel + Loom</a>
           <form class="search-bar" action="/search" method="get" role="search">
             <input
@@ -31,13 +31,26 @@
               data-js="search-input"
             />
           </form>
-          <div class="cart-icon" data-js="cart-icon">
-            <img src="assets/icons/cart-items-default.svg" alt="Cart Icon" />
-            <span class="cart-count" data-js="cart-count">0</span>
-          </div>
+          <button
+            class="cart-btn"
+            data-js="cart-icon"
+            aria-label="Cart with 0 items"
+          >
+            <img
+              src="assets/icons/cart-items-default.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Cart Items</span>
+            <span class="cart-count" data-js="cart-count" aria-live="polite"
+              >0</span
+            >
+          </button>
         </nav>
       </div>
     </header>
+    <main>
+    </main>
     <footer></footer>
     <script type="module" src="js/scripts.js"></script>
   </body>
