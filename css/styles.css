@@ -72,3 +72,16 @@ body {
   color: var(--clr-neutral-100);
   font-size: 1.5rem;
 }
+
+.search-bar {
+  width: 55%;
+  margin-block: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  border: none;
+  border-radius: 20px;
+}
