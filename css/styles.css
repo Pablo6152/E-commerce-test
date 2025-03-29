@@ -55,3 +55,9 @@ body {
 .primary-header {
   background-color: var(--clr-primary-500);
 }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
