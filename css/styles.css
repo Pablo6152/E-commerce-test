@@ -23,3 +23,22 @@
     --color-text-muted: var(--clr-neutral-700); */
 }
 
+/* 1. Reset  */
+
+/* ✅ Andy Bell's reset: https://piccalil.li/blog/a-modern-css...
+✅ Josh Comeau's reset: https://www.joshwcomeau.com/css/custo...
+✅ More on prefers-reduced-motion: https://web.dev/prefers-reduced-motion/ */
+
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Reset default margin, padding, and font inheritance */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
