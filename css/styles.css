@@ -43,7 +43,12 @@
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--ff-body);
   color: var(--clr-neutral-700);
 }
+
