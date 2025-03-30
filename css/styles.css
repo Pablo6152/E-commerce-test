@@ -136,8 +136,10 @@ a {
   text-decoration: none;
 }
 
+/* General styling */
+
 body {
-  font-family: var(--ff-body);
+  font-family: var(--ff-body), "Arial", sans-serif;
   color: var(--clr-neutral-700);
 }
 
@@ -182,7 +184,7 @@ body {
   border: none;
 }
 
-/* Media Queries */
+/* Media queries */
 
 /* Left-align placeholder AND input text on larger screens */
 @media (min-width: 768px) {
