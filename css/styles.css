@@ -168,7 +168,7 @@ body {
 .search-bar {
   width: 55%;
   max-width: 300px;
-  margin-block: 1rem;
+  margin-block: 1em;
 }
 
 .search-input {
