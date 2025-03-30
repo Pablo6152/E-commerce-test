@@ -184,6 +184,13 @@ body {
   border: none;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 2em 0;
+}
+
 /* Media queries */
 
 /* Left-align placeholder AND input text on larger screens */
