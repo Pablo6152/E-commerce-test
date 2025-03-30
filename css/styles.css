@@ -58,6 +58,7 @@ body {
   max-width: 90%;
 }
 
+/* Header */
 .primary-header {
   background-color: var(--clr-primary-500);
 }
@@ -75,6 +76,7 @@ body {
 
 .search-bar {
   width: 55%;
+  max-width: 300px;  
   margin-block: 1rem;
 }
 
