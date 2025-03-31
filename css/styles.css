@@ -146,7 +146,8 @@ body {
 .container {
   width: 100%;
   margin-inline: auto;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1200px;
 }
 
 /* Header */
