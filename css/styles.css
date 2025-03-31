@@ -195,6 +195,12 @@ body {
   place-items: center;
 }
 
+.product-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24); /* ✅ Conventional soft shadow */
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border: 1px solid #eee;
+}
+
 /* Media queries */
 
 /* Left-align placeholder AND input text on larger screens */
