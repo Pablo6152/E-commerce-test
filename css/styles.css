@@ -198,6 +198,19 @@ body {
   border-color: var(--clr-neutral-500);
 }
 
+/* Left-align placeholder AND input text on larger screens */
+@media (min-width: 768px) {
+  .search-bar {
+    max-width: 400px;
+  }
+
+  .search-input {
+    text-align: left;
+    padding-left: 2em;
+    width: 100%;
+  }
+}
+
 .cart-btn {
   background: none;
   border: none;
@@ -219,17 +232,4 @@ body {
   border: 1px solid #eee;
 }
 
-/* Media queries */
 
-/* Left-align placeholder AND input text on larger screens */
-@media (min-width: 768px) {
-  .search-bar {
-    max-width: 400px;
-  }
-
-  .search-input {
-    text-align: left;
-    padding-left: 2em;
-    width: 100%;
-  }
-}
