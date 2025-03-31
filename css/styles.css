@@ -169,7 +169,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.logo:hover, .logo.focus {
+.logo:hover,
+.logo.focus {
   color: var(--clr-neutral-500);
 }
 
@@ -185,6 +186,16 @@ body {
   padding: 0.5em;
   border: none;
   border-radius: 20px;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.search-input:hover, .search-input:focus {
+  box-shadow: 0 0 0 2px var(--clr-neutral-500);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--clr-neutral-500);
 }
 
 .cart-btn {
