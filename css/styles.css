@@ -240,7 +240,7 @@ body {
 }
 
 .product-footer {
-  padding-left: 1em;
+  padding: 1em 0 0.5em 1em;
   color: var(--clr-primary-500);
 }
 
