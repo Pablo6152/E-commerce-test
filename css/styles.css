@@ -2,6 +2,7 @@
   --clr-primary-500: hsl(221, 39%, 11%);
 
   --clr-neutral-700: hsl(215, 14%, 34%);
+  --clr-neutral-500: hsl(0, 0%, 71%);
   --clr-neutral-300: hsl(220, 13%, 91%);
   --clr-neutral-200: hsl(0, 0%, 97%);
   --clr-neutral-100: hsl(0, 0%, 100%);
@@ -168,6 +169,10 @@ body {
   transition: color 0.3s ease;
 }
 
+.logo:hover, .logo.focus {
+  color: var(--clr-neutral-500);
+}
+
 .search-bar {
   width: 55%;
   max-width: 300px;
@@ -198,7 +203,7 @@ body {
 }
 
 .product-card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24); /* ✅ Conventional soft shadow */
+  box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.24); /* ✅ Conventional soft shadow */
   transition: box-shadow 0.3s ease, transform 0.2s ease;
   border: 1px solid #eee;
 }
