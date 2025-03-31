@@ -243,3 +243,7 @@ body {
   padding-left: 1em;
   color: var(--clr-primary-500);
 }
+
+.product-price {
+  font-weight: var(--fw-semi-bold);
+}
