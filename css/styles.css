@@ -164,6 +164,8 @@ body {
 .logo {
   color: var(--clr-neutral-100);
   font-size: 1.5rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
 
 .search-bar {
