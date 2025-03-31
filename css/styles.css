@@ -239,3 +239,7 @@ body {
   object-fit: cover;
 }
 
+.product-footer {
+  padding-left: 1em;
+  color: var(--clr-primary-500);
+}
