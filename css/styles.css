@@ -9,8 +9,8 @@
 
   --clr-accent-500: hsl(199, 89%, 48%);
 
-  --clr-shadow-100: hsla(0, 0%, 0%, 0.1);   
-  --clr-shadow-200: hsla(0, 0%, 0%, 0.24);  
+  --clr-shadow-100: hsla(0, 0%, 0%, 0.1);
+  --clr-shadow-200: hsla(0, 0%, 0%, 0.24);
 
   --ff-primary: "Poppins", sans-serif;
 
@@ -192,7 +192,8 @@ body {
   transition: box-shadow 0.3s ease, border 0.3s ease;
 }
 
-.search-input:hover, .search-input:focus {
+.search-input:hover,
+.search-input:focus {
   box-shadow: 0 0 0 2px var(--clr-neutral-500);
 }
 
@@ -278,4 +279,17 @@ body {
 
 .product-price {
   font-weight: var(--fw-semi-bold);
+}
+
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
