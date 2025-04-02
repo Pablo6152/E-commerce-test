@@ -177,7 +177,7 @@ body {
 }
 
 .search-bar {
-  width: 55%;
+  width: 60%;
   max-width: 300px;
   margin-block: 1em;
 }
@@ -253,7 +253,7 @@ body {
   background-color: var(--clr-neutral-100);
   border: none;
   border-radius: 50%;
-  padding: 0.75em;
+  padding: 1em;
   cursor: pointer;
   box-shadow: var(--shadow-default);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -267,7 +267,7 @@ body {
   box-shadow: var(--shadow-focus);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .add-to-cart-btn {
     padding: 0.5em;
   }
