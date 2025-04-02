@@ -224,6 +224,12 @@ body {
   place-items: center;
 }
 
+@media (min-width: 768px) {
+  .grid {
+    padding: 3em 0;
+  }
+}
+
 .product-card {
   box-shadow: var(--shadow-default);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
