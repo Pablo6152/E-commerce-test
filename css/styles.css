@@ -1,18 +1,14 @@
 :root {
-  --clr-primary-500: hsl(221, 39%, 11%);
-
+  --clr-neutral-800: hsl(221, 39%, 11%);
   --clr-neutral-700: hsl(215, 14%, 34%);
-  --clr-neutral-500: hsl(0, 0%, 71%);
   --clr-neutral-300: hsl(220, 13%, 91%);
-  --clr-neutral-200: hsl(0, 0%, 97%);
   --clr-neutral-100: hsl(0, 0%, 100%);
 
   --clr-accent-500: hsl(199, 89%, 48%);
 
-  --clr-shadow-100: hsla(0, 0%, 0%, 0.1);
-  --clr-shadow-200: hsla(0, 0%, 0%, 0.24);
-  --clr-shadow-400: hsla(0, 0%, 0%, 0.5);
-  --clr-shadow-600: hsla(0, 0%, 0%, 0.8);
+  --shadow-200: 0 4px 12px hsla(0, 0%, 0%, 0.18);
+  --shadow-300: 0 6px 20px hsla(0, 0%, 0%, 0.24);
+  --shadow-400: 0 6px 20px hsla(0, 0%, 0%, 0.271);
 
   --ff-primary: "Poppins", sans-serif;
 
@@ -23,10 +19,15 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
 
-  /* --color-text-primary: var(--clr-primary-500);
-    --color-bg-page: var(--clr-neutral-100);
-    --color-bg-hero: var(--clr-neutral-200);
-    --color-text-muted: var(--clr-neutral-700); */
+  --clr-text-base: var(--clr-neutral-700);
+  --clr-text-strong: var(--clr-neutral-800);
+  --clr-text-inverse: var(--clr-neutral-100);
+  --clr-border-muted: var(--clr-neutral-300);
+  --clr-bg-page: var(--clr-neutral-100);
+  --clr-bg-header: var(--clr-neutral-800);
+  --shadow-default: var(--shadow-200);
+  --shadow-hover: var(--shadow-300);
+  --shadow-focus: var(--shadow-400);
 }
 
 /* 1. Reset  */
@@ -146,7 +147,7 @@ a {
 
 body {
   font-family: var(--ff-body), "Arial", sans-serif;
-  color: var(--clr-neutral-700);
+  color: var(--clr-text-base);
 }
 
 .container {
@@ -158,7 +159,8 @@ body {
 
 /* Header */
 .primary-header {
-  background-color: var(--clr-primary-500);
+  background-color: var(--clr-bg-header);
+  color: var(--clr-text-inverse);
 }
 
 .nav-wrapper {
@@ -168,15 +170,10 @@ body {
 }
 
 .logo {
-  color: var(--clr-neutral-100);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: var(--fw-semi-bold);
+  color: inherit;
   transition: color 0.3s ease;
-}
-
-.logo:hover,
-.logo.focus {
-  color: var(--clr-neutral-500);
 }
 
 .search-bar {
@@ -188,20 +185,15 @@ body {
 .search-input {
   width: 100%;
   text-align: center;
+  color: var(--clr-text-strong);
   padding: 0.5em;
   border: none;
   border-radius: 20px;
-  transition: box-shadow 0.3s ease, border 0.3s ease;
+  transition: 0.3s ease, border 0.3s ease;
 }
 
-.search-input:hover,
-.search-input:focus {
-  box-shadow: 0 0 0 2px var(--clr-neutral-500);
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: var(--clr-neutral-500);
+.search-input::placeholder {
+  color: var(--clr-text-base);
 }
 
 /* Left-align placeholder AND input text on larger screens */
@@ -233,13 +225,12 @@ body {
 }
 
 .product-card {
-  box-shadow: 0 2px 8px var(--clr-shadow-200); /* ✅ Conventional soft shadow */
+  box-shadow: var(--shadow-default);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
-  border: 1px solid var(--clr-neutral-100);
 }
 
 .product-card:hover {
-  box-shadow: 0 4px 16px var(--clr-shadow-100);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
 }
 
@@ -258,16 +249,16 @@ body {
   border-radius: 50%;
   padding: 0.75em;
   cursor: pointer;
+  box-shadow: var(--shadow-default);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 6px var(--clr-shadow-200);
 }
 
 .add-to-cart-btn:hover {
-  box-shadow: 0 2px 6px var(--clr-shadow-400);
+  box-shadow: var(--shadow-hover);
 }
 
 .add-to-cart-btn:focus {
-  box-shadow: 0 2px 6px var(--clr-shadow-600);
+  box-shadow: var(--shadow-focus);
 }
 
 @media (min-width: 768px) {
@@ -285,7 +276,7 @@ body {
 
 .product-footer {
   padding: 1em 0 0.5em 1em;
-  color: var(--clr-primary-500);
+  color: var(--clr-text-strong);
 }
 
 .product-price {
