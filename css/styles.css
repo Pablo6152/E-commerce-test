@@ -209,12 +209,12 @@ body {
   }
 }
 
+/* Product */
+
 .cart-btn {
   background: none;
   border: none;
 }
-
-/* Product */
 
 .grid {
   display: grid;
