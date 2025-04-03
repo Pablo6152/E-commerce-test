@@ -1,0 +1,76 @@
+[
+    {
+      "id": "home-golden-throw-pillow",
+      "name": "Golden Velvet Throw Pillow",
+      "price": 169.99,
+      "discountPrice": 109.99,
+      "image": "assets/images/pillow-golden.png",
+      "category": "home-decor",
+      "rating": 4.3,
+      "reviews": 98
+    },
+    {
+      "id": "womens-emerald-pant-suit",
+      "name": "Emerald Green Pant Suit",
+      "price": 169.99,
+      "image": "assets/images/emerald-suit.png",
+      "category": "women-fashion",
+      "rating": 4.3,
+      "reviews": 98
+    },
+    {
+      "id": "womens-plaid-wool-coat",
+      "name": "Plaid Wool Trench Coat",
+      "price": 169.99,
+      "image": "assets/images/plaid-coat.png",
+      "category": "outerwear",
+      "rating": 4.0,
+      "reviews": 98
+    },
+    {
+      "id": "womens-black-satin-dress",
+      "name": "Black Satin Slip Dress",
+      "price": 169.99,
+      "image": "assets/images/black-dress.png",
+      "category": "dresses",
+      "rating": 4.3,
+      "reviews": 98
+    },
+    {
+      "id": "womens-gray-blazer-set",
+      "name": "Structured Gray Blazer Set",
+      "price": 169.99,
+      "image": "assets/images/gray-blazer.png",
+      "category": "women-fashion",
+      "rating": 4.3,
+      "reviews": 98
+    },
+    {
+      "id": "womens-beige-trench-coat",
+      "name": "Beige Belted Trench Coat",
+      "price": 169.99,
+      "image": "assets/images/beige-trench.png",
+      "category": "outerwear",
+      "rating": 4.3,
+      "reviews": 98
+    },
+    {
+      "id": "womens-white-tailored-blazer",
+      "name": "White Tailored Blazer",
+      "price": 169.99,
+      "image": "assets/images/white-blazer.png",
+      "category": "women-fashion",
+      "rating": 4.3,
+      "reviews": 98
+    },
+    {
+      "id": "womens-monochrome-suit",
+      "name": "Monochrome Two-Piece Suit",
+      "price": 169.99,
+      "image": "assets/images/monochrome-suit.png",
+      "category": "women-fashion",
+      "rating": 4.3,
+      "reviews": 98
+    }
+  ]
+  
