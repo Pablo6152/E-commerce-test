@@ -25,6 +25,7 @@
   --clr-border-muted: var(--clr-neutral-300);
   --clr-bg-page: var(--clr-neutral-100);
   --clr-bg-header: var(--clr-neutral-800);
+  --clr-bg-accent: var(--clr-accent-500);
   --shadow-default: var(--shadow-200);
   --shadow-hover: var(--shadow-300);
   --shadow-focus: var(--shadow-400);
@@ -209,12 +210,15 @@ body {
   }
 }
 
-/* Product */
 
 .cart-btn {
+  position: relative;
   background: none;
   border: none;
+  color: inherit;
 }
+
+/* Product */
 
 .grid {
   display: grid;
