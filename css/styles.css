@@ -151,6 +151,9 @@ body {
   color: var(--clr-text-base);
 }
 
+main {
+  margin-top: 80px;
+}
 .container {
   width: 100%;
   margin-inline: auto;
@@ -160,6 +163,11 @@ body {
 
 /* Header */
 .primary-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background-color: var(--clr-bg-header);
   color: var(--clr-text-inverse);
 }
