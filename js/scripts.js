@@ -11,6 +11,18 @@ const DOM = {
   productGrid: document.querySelector('[data-js="product-grid-container"]'),
 };
 
+// Loads product data from JSON and renders the initial UI
+async function loadProducts() {
+  try {
+    const response = await fetch("./data/products.json");
+    const data = await response.json();
+    productsData.push(...data);
+    console.log(productsData);
+  } catch (error) {
+    console.error("Failed to load product data:", error);
+  }
+}
+
 // Init
 document.addEventListener("DOMContentLoaded", () => {
   loadProducts();
