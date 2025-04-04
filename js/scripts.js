@@ -11,11 +11,7 @@ const DOM = {
   productGrid: document.querySelector('[data-js="product-grid-container"]'),
 };
 
-// ====== Functions ======
-// renderProducts(), handleSearch(), updateCartUI(), etc...
-
-// ====== Event Listeners ======
-// DOM.searchForm.addEventListener(...), etc...
-
-// ====== Initialization ======
-// loadProducts(), updateCartUI()
+// Init
+document.addEventListener("DOMContentLoaded", () => {
+  loadProducts();
+});
