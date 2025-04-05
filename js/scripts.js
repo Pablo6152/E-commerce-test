@@ -23,9 +23,11 @@ async function loadProducts() {
     const response = await fetch("./data/products.json");
     const data = await response.json();
     state.products = data;
+    console.log(state.products)
     renderProducts(state.products);
   } catch (error) {
     console.error("Failed to load product data:", error);
+    DOM.productGrid.innerHTML = `<p class="error-message">Something went wrong while loading products.</p>`
   }
 }
 
