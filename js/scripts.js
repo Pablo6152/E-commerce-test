@@ -1,6 +1,12 @@
-// Global State
-let productsData = [];
-const cartItems = [];
+// Application State
+const state = {
+  products: [],
+  cart: [],
+  filters: {
+    searchQuery: "",
+    category: "all",
+  },
+};
 
 // DOM References
 const DOM = {
@@ -16,8 +22,8 @@ async function loadProducts() {
   try {
     const response = await fetch("./data/products.json");
     const data = await response.json();
-    productsData = data; 
-    renderProducts(productsData);
+    state.products = data;
+    renderProducts(state.products);
   } catch (error) {
     console.error("Failed to load product data:", error);
   }
