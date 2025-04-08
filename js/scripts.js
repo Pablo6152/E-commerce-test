@@ -11,7 +11,7 @@ let state = {
 // Generates a single product card markup
 function createProductCardMarkup(product) {
   return `
-  <article class="product-card"> 
+  <div class="product-card"> 
   <div class="product-card__header">
   <img src="${product.image}" 
   alt="${product.name}" 
@@ -27,7 +27,7 @@ function createProductCardMarkup(product) {
   <h3>${product.name}</h3>
   <span class="fw-semi-bold" aria-label="Price: ${product.price}">${product.price}</span>
   </div> 
-  </article>`;
+  </div>`;
 }
 
 // Renders product cards into the product grid
