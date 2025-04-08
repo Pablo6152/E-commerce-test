@@ -303,7 +303,13 @@ main {
 .product-card__footer {
   padding: 1em 1em 0.5em;
   color: var(--clr-text-strong);
-  height: 100px;
+  height: 5.5em;
+}
+
+@media (min-width: 1024px) {
+  .product-card__footer {
+    height: 6.5em;
+  }
 }
 
 /* Utility classes */
