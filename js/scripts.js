@@ -30,6 +30,30 @@ function createProductCardMarkup(product) {
   </article>`;
 }
 
+// Renders product cards into the product grid
+function renderProducts(products) {
+  const productGrid = document.querySelector(
+    '[data-js="product-grid-container"]'
+  );
+
+  // Clear previous content
+  productGrid.innerHTML = "";
+
+  // Handle empty state
+  if (!products || products.length === 0) {
+    productGrid.innerHTML = `<p class="no-results">No products found.</p>`;
+    return;
+  }
+
+  const markup = products
+    .map((product) => {
+      return createProductCardMarkup(product);
+    })
+    .join("");
+
+  productGrid.innerHTML = markup;
+}
+
 // Loads product data from JSON and updates state
 async function loadProducts() {
   try {
