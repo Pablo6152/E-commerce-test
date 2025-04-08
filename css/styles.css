@@ -239,10 +239,9 @@ main {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 1.5em;
   padding: 2em 0;
-  place-items: center;
 }
 
 @media (min-width: 768px) {
@@ -304,6 +303,7 @@ main {
 .product-card__footer {
   padding: 1em 1em 0.5em;
   color: var(--clr-text-strong);
+  height: 100px;
 }
 
 /* Utility classes */
