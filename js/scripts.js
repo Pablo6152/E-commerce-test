@@ -25,7 +25,7 @@ function createProductCardMarkup(product) {
   </div>
   <div class="product-card__footer">
   <h3>${product.name}</h3>
-  <span class="fw-semi-bold" aria-label="Price: ${product.price}">${product.price}</span>
+  <span class="fw-semi-bold" aria-label="Price: ${product.price}">$${product.price}</span>
   </div> 
   </div>`;
 }
